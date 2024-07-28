@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".future.activity.MainActivity">
+
+    <com.tuanvu.quanlichitieu.future.bottomnavigation.MeowBottomNavigation
+        android:id="@+id/meowBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/ll_text_menu"
+        app:mbn_backgroundBottomColor="#252836"
+        app:mbn_centerCircleColor="#FC3737FA"
+        app:mbn_defaultIconColor="@color/clr_808191"
+        app:mbn_endCircleColor="#6DE1DB"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#fff"
+        app:mbn_shadowColor="#1f212121"
+        app:mbn_startCircleColor="#BE4DFF"
+        app:mbn_valueDurationColor="40" />
+
+    <LinearLayout
+        android:id="@+id/ll_text_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#252836"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+       >
+
+        <TextView
+            android:id="@+id/tvDownload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/_12sdp"
+            android:singleLine="true"
+            android:text="@string/downloaded"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/_12sdp"
+            android:singleLine="true"
+            android:text="@string/home"
+            android:textColor="@color/clr_808191" />
+
+        <TextView
+            android:id="@+id/tvSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/_12sdp"
+            android:singleLine="true"
+            android:text="@string/setting"
+            android:textColor="@color/clr_808191" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
